@@ -94,9 +94,9 @@ const pool = new Pool({
 
 4.1 Usar o comando `node index.js` no terminal
 
-5 TESTAR AS ROTAS
+# 5 TESTAR AS ROTAS
 
-# GET  
+GET  
 http://localhost:3000/todos  
 http://localhost:3000/todos/:id  
 POST  
