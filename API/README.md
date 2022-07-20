@@ -2,7 +2,7 @@
 
 Uma API simples, com comandos CRUD, feita com Node e Express, usando um pacote chamado node-postgres.
 
-#H1 PASSO 1 - INSTALAÇÃO E CONFIGURAÇÃO
+#PASSO 1 - INSTALAÇÃO E CONFIGURAÇÃO
 
 1.1 Instalar o Node.js:
 
