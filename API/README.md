@@ -30,7 +30,7 @@ PASSO 2 - CONFIGURAÇÃO
 
 2.3 Abrindo novamente o *psql*, pressione ENTER até a linha de Username e faça login com o novo ROLE me, seguindo as instruções abaixo :
 
-![Untitled](CRUD%20API%20com%20Node,%20Express%20e%20PostgreSQL%20c8bd1c316485425aa01164f93e6cbfca/Untitled.png)
+![Untitled](imagens/Untitled.png)
 
 O prompt mudará para `postgres⇒` , informando que você não está mais logado como superuser.
 
