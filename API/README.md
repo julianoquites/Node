@@ -75,7 +75,7 @@ Instalando Express e node-postgres
 
 `npm i express pg`
 
-# 3 CONFIGURAÇÃO DE USER E PASSWORD
+# PASSO 3 CONFIGURAÇÃO DE USER E PASSWORD
 
 3.1 Insira seu password escolhido no arquivo queries.js e, caso você esteja usando outro nome de usuário e porta, por favor inserir nos atributos `user` e `port`, dentro de `pool`
 
@@ -90,11 +90,11 @@ const pool = new Pool({
 });
 ```
 
-# 4 INICIAR O SERVIDOR
+# PASSO 4 INICIAR O SERVIDOR
 
 4.1 Usar o comando `node index.js` no terminal
 
-# 5 TESTAR AS ROTAS
+# PASSO 5 TESTAR AS ROTAS
 
 GET  
 http://localhost:3000/todos  
