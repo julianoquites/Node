@@ -50,7 +50,7 @@ Deixando nossa linha assim
 
 ```
 CREATE TABLE todos (ID SERIAL PRIMARY KEY, tarefas VARCHAR(30),
-local VARCHAR(30), data VARCHAR(30), concluido BOOLEAN );
+local VARCHAR(30), data VARCHAR(30), concluido BOOLEAN);
 ```
 
 2.6 Testar para ter certeza se a tabela foi criada com sucesso inserindo duas entradas de exemplo
