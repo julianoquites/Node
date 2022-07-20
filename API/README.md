@@ -2,7 +2,7 @@
 
 Uma API simples, com comandos CRUD, feita com Node e Express, usando um pacote chamado node-postgres.
 
-PASSO 1 - INSTALAÇÃO E CONFIGURAÇÃO
+#H1 PASSO 1 - INSTALAÇÃO E CONFIGURAÇÃO
 
 1.1 Instalar o Node.js:
 
@@ -93,3 +93,15 @@ const pool = new Pool({
 4 INICIAR O SERVIDOR
 
 4.1 Usar o comando `node index.js` no terminal
+
+5 TESTAR AS ROTAS
+
+GET
+http://localhost:3000/todos
+http://localhost:3000/todos/:id
+POST
+http://localhost:3000/todos
+UPDATE
+http://localhost:3000/todos/:id
+DELETE
+http://localhost:3000/todos/:id
