@@ -20,8 +20,6 @@ Esta página contém todos os passos e comandos necessários para começar a usa
 
 # PASSO 2 - CONFIGURAÇÃO
 
-2 Configurar o PostgreSQL:
-
 2.1 Após a instalação, abrir o prompt de comando *psql* e, logado como superuser (quando a linha fica `postgres=#` ) criar um novo ROLE chamado *me*, escolhendo o password de sua preferência:
 
 `postgres=# CREATE ROLE me WITH LOGIN PASSWORD 'password';`
