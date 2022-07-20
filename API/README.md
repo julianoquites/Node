@@ -28,7 +28,7 @@ Esta página contém todos os passos e comandos necessários para começar a usa
 
 2.2 Saia da sessão atual com o comando `postgres=# \q`
 
-2.3 Abrindo novamente o *psql*, pressione ENTER até a linha de Username e faça login com o novo ROLE me, seguindo as instruções abaixo :
+2.3 Abrindo novamente o *psql*, pressione ENTER até a linha de Username e faça login com o novo ROLE me, seguindo as instruções abaixo:
 
 ![Untitled](imagens/Untitled.png)
 
@@ -75,7 +75,7 @@ Instalando Express e node-postgres
 
 `npm i express pg`
 
-# PASSO 3 CONFIGURAÇÃO DE USER E PASSWORD
+# PASSO 3 - CONFIGURAÇÃO DE USER E PASSWORD
 
 3.1 Insira seu password escolhido no arquivo queries.js e, caso você esteja usando outro nome de usuário e porta, por favor inserir nos atributos `user` e `port`, dentro de `pool`
 
@@ -90,11 +90,11 @@ const pool = new Pool({
 });
 ```
 
-# PASSO 4 INICIAR O SERVIDOR
+# PASSO 4 - INICIAR O SERVIDOR
 
 4.1 Usar o comando `node index.js` no terminal
 
-# PASSO 5 TESTAR AS ROTAS
+# PASSO 5 - TESTAR AS ROTAS
 
 GET  
 http://localhost:3000/todos  
