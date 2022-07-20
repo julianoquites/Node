@@ -77,7 +77,7 @@ Instalando Express e node-postgres
 
 3 CONFIGURAÇÃO DE USER E PASSWORD
 
-3.1 Insira seu password escolhido e, caso você esteja usando outro nome de usuário e porta, por favor inserir nos atributos `user` e `port`, dentro de `pool`
+3.1 Insira seu password escolhido no arquivo queries.js e, caso você esteja usando outro nome de usuário e porta, por favor inserir nos atributos `user` e `port`, dentro de `pool`
 
 ```jsx
 const Pool = require("pg").Pool;
