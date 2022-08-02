@@ -2,7 +2,7 @@
 
 Uma API simples, com comandos CRUD, feita com Node e Express, usando um pacote chamado node-postgres.
 
-PASSO 1 - INSTALAÇÃO E CONFIGURAÇÃO
+# PASSO 1 - INSTALAÇÃO E CONFIGURAÇÃO
 
 1.1 Instalar o Node.js:
 
@@ -18,9 +18,7 @@ Esta página contém todos os passos e comandos necessários para começar a usa
 
 [Download Visual Studio Code - Mac, Linux, Windows](https://code.visualstudio.com/Download)
 
-PASSO 2 - CONFIGURAÇÃO
-
-2 Configurar o PostgreSQL:
+# PASSO 2 - CONFIGURAÇÃO
 
 2.1 Após a instalação, abrir o prompt de comando *psql* e, logado como superuser (quando a linha fica `postgres=#` ) criar um novo ROLE chamado *me*, escolhendo o password de sua preferência:
 
@@ -28,9 +26,9 @@ PASSO 2 - CONFIGURAÇÃO
 
 2.2 Saia da sessão atual com o comando `postgres=# \q`
 
-2.3 Abrindo novamente o *psql*, pressione ENTER até a linha de Username e faça login com o novo ROLE me, seguindo as instruções abaixo :
+2.3 Abrindo novamente o *psql*, pressione ENTER até a linha de Username e faça login com o novo ROLE me, seguindo as instruções abaixo:
 
-![Untitled](CRUD%20API%20com%20Node,%20Express%20e%20PostgreSQL%20c8bd1c316485425aa01164f93e6cbfca/Untitled.png)
+![Untitled](imagens/Untitled.png)
 
 O prompt mudará para `postgres⇒` , informando que você não está mais logado como superuser.
 
@@ -50,7 +48,7 @@ Deixando nossa linha assim
 
 ```
 CREATE TABLE todos (ID SERIAL PRIMARY KEY, tarefas VARCHAR(30),
-local VARCHAR(30), data VARCHAR(30), concluido BOOLEAN );
+local VARCHAR(30), data VARCHAR(30), concluido BOOLEAN);
 ```
 
 2.6 Testar para ter certeza se a tabela foi criada com sucesso inserindo duas entradas de exemplo
@@ -75,9 +73,13 @@ Instalando Express e node-postgres
 
 `npm i express pg`
 
-3 CONFIGURAÇÃO DE USER E PASSWORD
+Instalando Módulo npm CORS
 
-3.1 Insira seu password escolhido e, caso você esteja usando outro nome de usuário e porta, por favor inserir nos atributos `user` e `port`, dentro de `pool`
+`npm install --save cors`
+
+# PASSO 3 - CONFIGURAÇÃO DE USER E PASSWORD
+
+3.1 No arquivo queries.js, insira seu password escolhido e, caso você esteja usando outro nome de usuário e porta, por favor inserir nos atributos `user` e `port`, dentro de `pool`
 
 ```jsx
 const Pool = require("pg").Pool;
@@ -90,6 +92,18 @@ const pool = new Pool({
 });
 ```
 
-4 INICIAR O SERVIDOR
+# PASSO 4 - INICIAR O SERVIDOR
 
 4.1 Usar o comando `node index.js` no terminal
+
+# PASSO 5 - TESTAR AS ROTAS
+
+GET  
+http://localhost:3000/todos  
+http://localhost:3000/todos/:id  
+POST  
+http://localhost:3000/todos  
+UPDATE  
+http://localhost:3000/todos/:id  
+DELETE  
+http://localhost:3000/todos/:id  

@@ -3,6 +3,10 @@ const bodyParser = require('body-parser')
 const app = express()
 const db = require('./queries')
 const port = 3000
+const cors = require("cors");
+
+app.use(cors());
+
 
 app.use(bodyParser.json())
 app.use(
@@ -16,7 +20,7 @@ app.get('/', (request, response) => {
 })
 
 app.get('/todos', db.getTasks);
-app.get("todos/:id", db.getTasksbyId);
+app.get("/todos/:id", db.getTasksbyId);
 app.post('/todos', db.createTask)
 app.put('/todos/:id', db.updateTask)
 app.delete('/todos/:id', db.deleteTask)

@@ -3,7 +3,7 @@ const pool = new Pool({
   user: "me",
   host: "localhost",
   database: "api",
-  password: "",
+  password: "k4b4sz22",
   port: 5432,
 });
 
@@ -28,10 +28,10 @@ const getTasksbyId = (request, response) => {
 };
 
 const createTask = (request, response) => {
-  const { tarefas, local, data, concluido } = request.body;
+  const { tarefa, local, data, lembrete } = request.body;
   pool.query(
-    "INSERT INTO todos (tarefas, local, data, concluido) VALUES ($1, $2, $3, $4) RETURNING *",
-    [tarefas, local, data, concluido],
+    "INSERT INTO todos (tarefa, local, data, lembrete) VALUES ($1, $2, $3, $4) RETURNING *",
+    [tarefa, local, data, lembrete],
     (error, results) => {
       if (error) {
         throw error;
@@ -43,11 +43,11 @@ const createTask = (request, response) => {
 
 const updateTask = (request, response) => {
   const id = parseInt(request.params.id);
-  const { tarefas, local, data, concluido } = request.body;
+  const { lembrete } = request.body;
 
   pool.query(
-    "UPDATE todos SET tarefas = $1, local = $2, data = $3, concluido = $4 WHERE id = $3",
-    [tarefas, local, data, concluido],
+    "UPDATE todos SET lembrete = $1 WHERE id = $2",
+    [lembrete, id],
     (error, results) => {
       if (error) {
         throw error;
