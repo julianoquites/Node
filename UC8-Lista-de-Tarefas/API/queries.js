@@ -36,7 +36,6 @@ const createTask = (request, response) => {
       if (error) {
         throw error;
       }
-      response.status(200).send(`Task added with ID: ${results.rows[0].id}`);
     }
   );
 };

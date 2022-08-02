@@ -6,8 +6,7 @@ const AddTask = ({ onAdd }) => {
   const [data, setData] = useState("");
   const [lembrete, setLembrete] = useState(false);
 
-  const onSubmit = (e) => {
-    e.preventDefault();
+  const onSubmit = () => {
 
     if (!tarefa) {
       alert("Por favor, adicione uma Tarefa.");
